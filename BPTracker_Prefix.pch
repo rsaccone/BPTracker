@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'BPTracker' target in the 'BPTracker' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+	#import <CoreData/CoreData.h>
+    #import <SLexUtil/DbgUtil.h>
+    #import <SLexUtil/PlatformHelper.h>
+#endif

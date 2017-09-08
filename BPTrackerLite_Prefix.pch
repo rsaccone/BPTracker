@@ -1,0 +1,13 @@
+//
+// Prefix header for all source files of the 'BPTrackerLite' target in the 'BPTracker' project
+//
+//  Copyright (c) 2017 Robert Saccone. All rights reserved.
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import <SLexUtil/DbgUtil.h>
+#import <SLexUtil/PlatformHelper.h>
+#import "BPTrackerLiteDefs.h"
+#endif

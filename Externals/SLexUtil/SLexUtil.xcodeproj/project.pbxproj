@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D0944CB157BC82C003AC686 /* DispatchingAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0944CA157BC82C003AC686 /* DispatchingAlertView.m */; };
+		0D0944D1157BD523003AC686 /* NSErrorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0944D0157BD523003AC686 /* NSErrorHelper.m */; };
+		0D0944D8157BD7AA003AC686 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0944D7157BD7AA003AC686 /* CoreFoundation.framework */; };
+		0D0944DE157BD7AB003AC686 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D0944DC157BD7AB003AC686 /* InfoPlist.strings */; };
+		0D0A1EE21940202800D2949E /* DateRangePickerViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D0A1EE11940202800D2949E /* DateRangePickerViewController_iPad.xib */; };
+		0D0B0BAF1702799A00CCB578 /* NSDate+UtilityExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B0BAE1702799A00CCB578 /* NSDate+UtilityExtensions.m */; };
+		0D0B0BB01702914800CCB578 /* NSDate+UtilityExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D0B0BAD1702799A00CCB578 /* NSDate+UtilityExtensions.h */; };
+		0D0E4DCA157A6C9100CA6AEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0E4DC9157A6C9100CA6AEF /* UIKit.framework */; };
+		0D2309C116D9236700E9DACF /* ActivityAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2309BF16D9236700E9DACF /* ActivityAlert.m */; };
+		0D251A8615FEC636000222EB /* DateRangePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D251A8315FEC636000222EB /* DateRangePickerViewController.m */; };
+		0D38F0011972D72D0078D725 /* SLXDateRangePickerCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D38F0001972D72D0078D725 /* SLXDateRangePickerCoordinator.m */; };
+		0D38F00219734E2B0078D725 /* SLXDateRangePickerCoordinator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D38EFFD1972D6CC0078D725 /* SLXDateRangePickerCoordinator.h */; };
+		0D428DD1157A604D00EAF746 /* NumericUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D428DCB157A604D00EAF746 /* NumericUtil.m */; };
+		0D428DD2157A604D00EAF746 /* PlatformHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D428DCC157A604D00EAF746 /* PlatformHelper.m */; };
+		0D428DD5157A604D00EAF746 /* ViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D428DCF157A604D00EAF746 /* ViewHelper.m */; };
+		0D6E89FD1581663B00596556 /* NSBundle+SLexUtilResBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6E89FC1581663B00596556 /* NSBundle+SLexUtilResBundle.m */; };
+		0D6E8A011581815B00596556 /* ErrorMsgBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6E8A001581815B00596556 /* ErrorMsgBuilder.m */; };
+		0D6E8A051581846400596556 /* UIViewController+HelperExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6E8A041581846400596556 /* UIViewController+HelperExtensions.m */; };
+		0D796BDB1661804D00A6D357 /* CHCSVWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D796BD71661804D00A6D357 /* CHCSVWriter.m */; };
+		0D796BDC1661804D00A6D357 /* NSArray+CHCSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D796BD81661804D00A6D357 /* NSArray+CHCSVAdditions.m */; };
+		0D796BDD1661804D00A6D357 /* NSString+CHCSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D796BD91661804D00A6D357 /* NSString+CHCSVAdditions.m */; };
+		0D796BDF1661811B00A6D357 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D796BDE1661811B00A6D357 /* CHCSVParser.m */; };
+		0DBF80C618CD3E1600AF8678 /* AbstractTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBF80C518CD3E1600AF8678 /* AbstractTableViewCell.m */; };
+		0DC6D22A1668460400AD8264 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC6D2291668460400AD8264 /* UIAlertView+Blocks.m */; };
+		0DDD8662158021CE0022AAE7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DDD8664158021CE0022AAE7 /* Localizable.strings */; };
+		0DECEE5A16EEB59F00A15173 /* ActivityAlert.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D2309BE16D9236700E9DACF /* ActivityAlert.h */; };
+		0DECEE5B16EEB59F00A15173 /* CHCSV.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D10036C1617F6E80044A857 /* CHCSV.h */; };
+		0DECEE5C16EEB59F00A15173 /* CHCSVParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D796BE01661812500A6D357 /* CHCSVParser.h */; };
+		0DECEE5D16EEB59F00A15173 /* CHCSVWriter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D10035E1617F6430044A857 /* CHCSVWriter.h */; };
+		0DECEE5E16EEB59F00A15173 /* DateRangePickerViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D251A8815FEC7AB000222EB /* DateRangePickerViewController.h */; };
+		0DECEE5F16EEB59F00A15173 /* DbgUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D04B43916585D23006C5262 /* DbgUtil.h */; };
+		0DECEE6016EEB59F00A15173 /* DispatchingAlertView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D0944CC157BC83F003AC686 /* DispatchingAlertView.h */; };
+		0DECEE6116EEB59F00A15173 /* ErrorMsgBuilder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D6E89FE1581814F00596556 /* ErrorMsgBuilder.h */; };
+		0DECEE6216EEB59F00A15173 /* NSArray+CHCSVAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D1003601617F6540044A857 /* NSArray+CHCSVAdditions.h */; };
+		0DECEE6316EEB59F00A15173 /* NSBundle+SLexUtilResBundle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D6E89F71581655000596556 /* NSBundle+SLexUtilResBundle.h */; };
+		0DECEE6516EEB59F00A15173 /* NSErrorHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D0944CE157BD4D7003AC686 /* NSErrorHelper.h */; };
+		0DECEE6616EEB59F00A15173 /* NSString+CHCSVAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D1003621617F65F0044A857 /* NSString+CHCSVAdditions.h */; };
+		0DECEE6716EEB59F00A15173 /* NumericUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D428DD8157A607F00EAF746 /* NumericUtil.h */; };
+		0DECEE6816EEB59F00A15173 /* PlatformHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D428DD9157A607F00EAF746 /* PlatformHelper.h */; };
+		0DECEE6916EEB59F00A15173 /* UIAlertView+Blocks.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0DC6D228166844AD00AD8264 /* UIAlertView+Blocks.h */; };
+		0DECEE6A16EEB59F00A15173 /* UIViewController+HelperExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D6E8A021581845900596556 /* UIViewController+HelperExtensions.h */; };
+		0DECEE6B16EEB59F00A15173 /* ViewHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D0E4DC6157A6BCC00CA6AEF /* ViewHelper.h */; };
+		0DECEE6C16EEB6A900A15173 /* SLexUtil-Prefix.pch in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D428DC7157A5FCC00EAF746 /* SLexUtil-Prefix.pch */; };
+		0DFCA8A01579CA1400E71B5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DFCA89F1579CA1400E71B5A /* Foundation.framework */; };
+		0DFCA8AE1579CA1400E71B5A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DFCA8AD1579CA1400E71B5A /* SenTestingKit.framework */; };
+		0DFCA8B11579CA1400E71B5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DFCA89F1579CA1400E71B5A /* Foundation.framework */; };
+		0DFCA8B41579CA1400E71B5A /* libSLexUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DFCA89C1579CA1400E71B5A /* libSLexUtil.a */; };
+		0DFCA8BA1579CA1400E71B5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DFCA8B81579CA1400E71B5A /* InfoPlist.strings */; };
+		0DFCA8BD1579CA1400E71B5A /* SLexUtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFCA8BC1579CA1400E71B5A /* SLexUtilTests.m */; };
+		0DFDF35916004AB90088EC9F /* DateRangePickerViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D251A8A15FEC7D2000222EB /* DateRangePickerViewController_iPhone.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DFCA8B21579CA1400E71B5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DFCA8931579CA1300E71B5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DFCA89B1579CA1400E71B5A;
+			remoteInfo = SLexUtil;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0DECEE5916EEB51600A15173 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				0D38F00219734E2B0078D725 /* SLXDateRangePickerCoordinator.h in CopyFiles */,
+				0D0B0BB01702914800CCB578 /* NSDate+UtilityExtensions.h in CopyFiles */,
+				0DECEE6C16EEB6A900A15173 /* SLexUtil-Prefix.pch in CopyFiles */,
+				0DECEE5A16EEB59F00A15173 /* ActivityAlert.h in CopyFiles */,
+				0DECEE5B16EEB59F00A15173 /* CHCSV.h in CopyFiles */,
+				0DECEE5C16EEB59F00A15173 /* CHCSVParser.h in CopyFiles */,
+				0DECEE5D16EEB59F00A15173 /* CHCSVWriter.h in CopyFiles */,
+				0DECEE5E16EEB59F00A15173 /* DateRangePickerViewController.h in CopyFiles */,
+				0DECEE5F16EEB59F00A15173 /* DbgUtil.h in CopyFiles */,
+				0DECEE6016EEB59F00A15173 /* DispatchingAlertView.h in CopyFiles */,
+				0DECEE6116EEB59F00A15173 /* ErrorMsgBuilder.h in CopyFiles */,
+				0DECEE6216EEB59F00A15173 /* NSArray+CHCSVAdditions.h in CopyFiles */,
+				0DECEE6316EEB59F00A15173 /* NSBundle+SLexUtilResBundle.h in CopyFiles */,
+				0DECEE6516EEB59F00A15173 /* NSErrorHelper.h in CopyFiles */,
+				0DECEE6616EEB59F00A15173 /* NSString+CHCSVAdditions.h in CopyFiles */,
+				0DECEE6716EEB59F00A15173 /* NumericUtil.h in CopyFiles */,
+				0DECEE6816EEB59F00A15173 /* PlatformHelper.h in CopyFiles */,
+				0DECEE6916EEB59F00A15173 /* UIAlertView+Blocks.h in CopyFiles */,
+				0DECEE6A16EEB59F00A15173 /* UIViewController+HelperExtensions.h in CopyFiles */,
+				0DECEE6B16EEB59F00A15173 /* ViewHelper.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D04B43916585D23006C5262 /* DbgUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DbgUtil.h; sourceTree = "<group>"; };
+		0D0944CA157BC82C003AC686 /* DispatchingAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchingAlertView.m; sourceTree = "<group>"; };
+		0D0944CC157BC83F003AC686 /* DispatchingAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchingAlertView.h; sourceTree = "<group>"; };
+		0D0944CE157BD4D7003AC686 /* NSErrorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSErrorHelper.h; sourceTree = "<group>"; };
+		0D0944D0157BD523003AC686 /* NSErrorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSErrorHelper.m; sourceTree = "<group>"; };
+		0D0944D6157BD7AA003AC686 /* SLexUtilResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLexUtilResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D0944D7157BD7AA003AC686 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		0D0944DB157BD7AB003AC686 /* SLexUtilResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SLexUtilResources-Info.plist"; sourceTree = "<group>"; };
+		0D0944DD157BD7AB003AC686 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0D0944DF157BD7AB003AC686 /* SLexUtilResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SLexUtilResources-Prefix.pch"; sourceTree = "<group>"; };
+		0D0A1EE11940202800D2949E /* DateRangePickerViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateRangePickerViewController_iPad.xib; sourceTree = "<group>"; };
+		0D0B0BAD1702799A00CCB578 /* NSDate+UtilityExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+UtilityExtensions.h"; sourceTree = "<group>"; };
+		0D0B0BAE1702799A00CCB578 /* NSDate+UtilityExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+UtilityExtensions.m"; path = "../include/NSDate+UtilityExtensions.m"; sourceTree = "<group>"; };
+		0D0E4DC6157A6BCC00CA6AEF /* ViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHelper.h; sourceTree = "<group>"; };
+		0D0E4DC9157A6C9100CA6AEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0D10035E1617F6430044A857 /* CHCSVWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVWriter.h; sourceTree = "<group>"; };
+		0D1003601617F6540044A857 /* NSArray+CHCSVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CHCSVAdditions.h"; sourceTree = "<group>"; };
+		0D1003621617F65F0044A857 /* NSString+CHCSVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CHCSVAdditions.h"; sourceTree = "<group>"; };
+		0D10036C1617F6E80044A857 /* CHCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSV.h; sourceTree = "<group>"; };
+		0D2309BE16D9236700E9DACF /* ActivityAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityAlert.h; sourceTree = "<group>"; };
+		0D2309BF16D9236700E9DACF /* ActivityAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityAlert.m; path = ../include/ActivityAlert.m; sourceTree = "<group>"; };
+		0D251A8315FEC636000222EB /* DateRangePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateRangePickerViewController.m; sourceTree = "<group>"; };
+		0D251A8815FEC7AB000222EB /* DateRangePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateRangePickerViewController.h; sourceTree = "<group>"; };
+		0D251A8A15FEC7D2000222EB /* DateRangePickerViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateRangePickerViewController_iPhone.xib; sourceTree = "<group>"; };
+		0D38EFFD1972D6CC0078D725 /* SLXDateRangePickerCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLXDateRangePickerCoordinator.h; sourceTree = "<group>"; };
+		0D38F0001972D72D0078D725 /* SLXDateRangePickerCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLXDateRangePickerCoordinator.m; sourceTree = "<group>"; };
+		0D428DC7157A5FCC00EAF746 /* SLexUtil-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SLexUtil-Prefix.pch"; sourceTree = "<group>"; };
+		0D428DCB157A604D00EAF746 /* NumericUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumericUtil.m; sourceTree = "<group>"; };
+		0D428DCC157A604D00EAF746 /* PlatformHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformHelper.m; sourceTree = "<group>"; };
+		0D428DCF157A604D00EAF746 /* ViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHelper.m; sourceTree = "<group>"; };
+		0D428DD8157A607F00EAF746 /* NumericUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericUtil.h; sourceTree = "<group>"; };
+		0D428DD9157A607F00EAF746 /* PlatformHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformHelper.h; sourceTree = "<group>"; };
+		0D6E89F71581655000596556 /* NSBundle+SLexUtilResBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+SLexUtilResBundle.h"; sourceTree = "<group>"; };
+		0D6E89FC1581663B00596556 /* NSBundle+SLexUtilResBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+SLexUtilResBundle.m"; sourceTree = "<group>"; };
+		0D6E89FE1581814F00596556 /* ErrorMsgBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorMsgBuilder.h; sourceTree = "<group>"; };
+		0D6E8A001581815B00596556 /* ErrorMsgBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorMsgBuilder.m; sourceTree = "<group>"; };
+		0D6E8A021581845900596556 /* UIViewController+HelperExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HelperExtensions.h"; sourceTree = "<group>"; };
+		0D6E8A041581846400596556 /* UIViewController+HelperExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HelperExtensions.m"; sourceTree = "<group>"; };
+		0D796BD71661804D00A6D357 /* CHCSVWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVWriter.m; sourceTree = "<group>"; };
+		0D796BD81661804D00A6D357 /* NSArray+CHCSVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CHCSVAdditions.m"; sourceTree = "<group>"; };
+		0D796BD91661804D00A6D357 /* NSString+CHCSVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CHCSVAdditions.m"; sourceTree = "<group>"; };
+		0D796BDE1661811B00A6D357 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
+		0D796BE01661812500A6D357 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		0DBF80C418CD3E1600AF8678 /* AbstractTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractTableViewCell.h; sourceTree = "<group>"; };
+		0DBF80C518CD3E1600AF8678 /* AbstractTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractTableViewCell.m; path = ../include/AbstractTableViewCell.m; sourceTree = "<group>"; };
+		0DC6D228166844AD00AD8264 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		0DC6D2291668460400AD8264 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		0DDD8663158021CE0022AAE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0DDD8665158021F20022AAE7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0DFCA89C1579CA1400E71B5A /* libSLexUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSLexUtil.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DFCA89F1579CA1400E71B5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0DFCA8AC1579CA1400E71B5A /* SLexUtilTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLexUtilTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DFCA8AD1579CA1400E71B5A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0DFCA8B71579CA1400E71B5A /* SLexUtilTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SLexUtilTests-Info.plist"; sourceTree = "<group>"; };
+		0DFCA8B91579CA1400E71B5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0DFCA8BB1579CA1400E71B5A /* SLexUtilTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLexUtilTests.h; sourceTree = "<group>"; };
+		0DFCA8BC1579CA1400E71B5A /* SLexUtilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLexUtilTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D0944D3157BD7AA003AC686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D0944D8157BD7AA003AC686 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DFCA8991579CA1400E71B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D0E4DCA157A6C9100CA6AEF /* UIKit.framework in Frameworks */,
+				0DFCA8A01579CA1400E71B5A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DFCA8A81579CA1400E71B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DFCA8AE1579CA1400E71B5A /* SenTestingKit.framework in Frameworks */,
+				0DFCA8B11579CA1400E71B5A /* Foundation.framework in Frameworks */,
+				0DFCA8B41579CA1400E71B5A /* libSLexUtil.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D0944D9157BD7AB003AC686 /* SLexUtilResources */ = {
+			isa = PBXGroup;
+			children = (
+				0D0A1EE11940202800D2949E /* DateRangePickerViewController_iPad.xib */,
+				0D251A8A15FEC7D2000222EB /* DateRangePickerViewController_iPhone.xib */,
+				0DDD8664158021CE0022AAE7 /* Localizable.strings */,
+				0D0944DA157BD7AB003AC686 /* Supporting Files */,
+			);
+			path = SLexUtilResources;
+			sourceTree = "<group>";
+		};
+		0D0944DA157BD7AB003AC686 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D0944DB157BD7AB003AC686 /* SLexUtilResources-Info.plist */,
+				0D0944DC157BD7AB003AC686 /* InfoPlist.strings */,
+				0D0944DF157BD7AB003AC686 /* SLexUtilResources-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D428DC9157A604D00EAF746 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0D38F0001972D72D0078D725 /* SLXDateRangePickerCoordinator.m */,
+				0DBF80C518CD3E1600AF8678 /* AbstractTableViewCell.m */,
+				0D2309BF16D9236700E9DACF /* ActivityAlert.m */,
+				0D796BDE1661811B00A6D357 /* CHCSVParser.m */,
+				0D796BD71661804D00A6D357 /* CHCSVWriter.m */,
+				0D251A8315FEC636000222EB /* DateRangePickerViewController.m */,
+				0D0944CA157BC82C003AC686 /* DispatchingAlertView.m */,
+				0D6E8A001581815B00596556 /* ErrorMsgBuilder.m */,
+				0D796BD81661804D00A6D357 /* NSArray+CHCSVAdditions.m */,
+				0D6E89FC1581663B00596556 /* NSBundle+SLexUtilResBundle.m */,
+				0D0B0BAE1702799A00CCB578 /* NSDate+UtilityExtensions.m */,
+				0D0944D0157BD523003AC686 /* NSErrorHelper.m */,
+				0D796BD91661804D00A6D357 /* NSString+CHCSVAdditions.m */,
+				0D428DCB157A604D00EAF746 /* NumericUtil.m */,
+				0D428DCC157A604D00EAF746 /* PlatformHelper.m */,
+				0DC6D2291668460400AD8264 /* UIAlertView+Blocks.m */,
+				0D6E8A041581846400596556 /* UIViewController+HelperExtensions.m */,
+				0D428DCF157A604D00EAF746 /* ViewHelper.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		0D428DD6157A607F00EAF746 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0DBF80C418CD3E1600AF8678 /* AbstractTableViewCell.h */,
+				0D2309BE16D9236700E9DACF /* ActivityAlert.h */,
+				0D10036C1617F6E80044A857 /* CHCSV.h */,
+				0D796BE01661812500A6D357 /* CHCSVParser.h */,
+				0D10035E1617F6430044A857 /* CHCSVWriter.h */,
+				0D251A8815FEC7AB000222EB /* DateRangePickerViewController.h */,
+				0D04B43916585D23006C5262 /* DbgUtil.h */,
+				0D0944CC157BC83F003AC686 /* DispatchingAlertView.h */,
+				0D6E89FE1581814F00596556 /* ErrorMsgBuilder.h */,
+				0D1003601617F6540044A857 /* NSArray+CHCSVAdditions.h */,
+				0D0B0BAD1702799A00CCB578 /* NSDate+UtilityExtensions.h */,
+				0D6E89F71581655000596556 /* NSBundle+SLexUtilResBundle.h */,
+				0D0944CE157BD4D7003AC686 /* NSErrorHelper.h */,
+				0D1003621617F65F0044A857 /* NSString+CHCSVAdditions.h */,
+				0D428DD8157A607F00EAF746 /* NumericUtil.h */,
+				0D428DD9157A607F00EAF746 /* PlatformHelper.h */,
+				0DC6D228166844AD00AD8264 /* UIAlertView+Blocks.h */,
+				0D6E8A021581845900596556 /* UIViewController+HelperExtensions.h */,
+				0D38EFFD1972D6CC0078D725 /* SLXDateRangePickerCoordinator.h */,
+				0D0E4DC6157A6BCC00CA6AEF /* ViewHelper.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0DFCA8911579CA1300E71B5A = {
+			isa = PBXGroup;
+			children = (
+				0DFCA8A11579CA1400E71B5A /* SLexUtil */,
+				0DFCA8B51579CA1400E71B5A /* SLexUtilTests */,
+				0D0944D9157BD7AB003AC686 /* SLexUtilResources */,
+				0DFCA89E1579CA1400E71B5A /* Frameworks */,
+				0DFCA89D1579CA1400E71B5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0DFCA89D1579CA1400E71B5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DFCA89C1579CA1400E71B5A /* libSLexUtil.a */,
+				0DFCA8AC1579CA1400E71B5A /* SLexUtilTests.octest */,
+				0D0944D6157BD7AA003AC686 /* SLexUtilResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DFCA89E1579CA1400E71B5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D0E4DC9157A6C9100CA6AEF /* UIKit.framework */,
+				0DFCA89F1579CA1400E71B5A /* Foundation.framework */,
+				0DFCA8AD1579CA1400E71B5A /* SenTestingKit.framework */,
+				0D0944D7157BD7AA003AC686 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0DFCA8A11579CA1400E71B5A /* SLexUtil */ = {
+			isa = PBXGroup;
+			children = (
+				0D428DD6157A607F00EAF746 /* include */,
+				0D428DC9157A604D00EAF746 /* src */,
+				0DFCA8A21579CA1400E71B5A /* Supporting Files */,
+			);
+			path = SLexUtil;
+			sourceTree = "<group>";
+		};
+		0DFCA8A21579CA1400E71B5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D428DC7157A5FCC00EAF746 /* SLexUtil-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0DFCA8B51579CA1400E71B5A /* SLexUtilTests */ = {
+			isa = PBXGroup;
+			children = (
+				0DFCA8BB1579CA1400E71B5A /* SLexUtilTests.h */,
+				0DFCA8BC1579CA1400E71B5A /* SLexUtilTests.m */,
+				0DFCA8B61579CA1400E71B5A /* Supporting Files */,
+			);
+			path = SLexUtilTests;
+			sourceTree = "<group>";
+		};
+		0DFCA8B61579CA1400E71B5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DFCA8B71579CA1400E71B5A /* SLexUtilTests-Info.plist */,
+				0DFCA8B81579CA1400E71B5A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D0944D5157BD7AA003AC686 /* SLexUtilResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D0944E0157BD7AB003AC686 /* Build configuration list for PBXNativeTarget "SLexUtilResources" */;
+			buildPhases = (
+				0D0944D2157BD7AA003AC686 /* Sources */,
+				0D0944D3157BD7AA003AC686 /* Frameworks */,
+				0D0944D4157BD7AA003AC686 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLexUtilResources;
+			productName = SLexUtilResources;
+			productReference = 0D0944D6157BD7AA003AC686 /* SLexUtilResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		0DFCA89B1579CA1400E71B5A /* SLexUtil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DFCA8C01579CA1400E71B5A /* Build configuration list for PBXNativeTarget "SLexUtil" */;
+			buildPhases = (
+				0DFCA8981579CA1400E71B5A /* Sources */,
+				0DFCA8991579CA1400E71B5A /* Frameworks */,
+				0DECEE5916EEB51600A15173 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLexUtil;
+			productName = SLexUtil;
+			productReference = 0DFCA89C1579CA1400E71B5A /* libSLexUtil.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0DFCA8AB1579CA1400E71B5A /* SLexUtilTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DFCA8C31579CA1500E71B5A /* Build configuration list for PBXNativeTarget "SLexUtilTests" */;
+			buildPhases = (
+				0DFCA8A71579CA1400E71B5A /* Sources */,
+				0DFCA8A81579CA1400E71B5A /* Frameworks */,
+				0DFCA8A91579CA1400E71B5A /* Resources */,
+				0DFCA8AA1579CA1400E71B5A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DFCA8B31579CA1400E71B5A /* PBXTargetDependency */,
+			);
+			name = SLexUtilTests;
+			productName = SLexUtilTests;
+			productReference = 0DFCA8AC1579CA1400E71B5A /* SLexUtilTests.octest */;
+			productType = "com.apple.product-type.bundle.ocunit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DFCA8931579CA1300E71B5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastTestingUpgradeCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Robert Saccone";
+			};
+			buildConfigurationList = 0DFCA8961579CA1300E71B5A /* Build configuration list for PBXProject "SLexUtil" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				es,
+			);
+			mainGroup = 0DFCA8911579CA1300E71B5A;
+			productRefGroup = 0DFCA89D1579CA1400E71B5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DFCA89B1579CA1400E71B5A /* SLexUtil */,
+				0DFCA8AB1579CA1400E71B5A /* SLexUtilTests */,
+				0D0944D5157BD7AA003AC686 /* SLexUtilResources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D0944D4157BD7AA003AC686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D0A1EE21940202800D2949E /* DateRangePickerViewController_iPad.xib in Resources */,
+				0DFDF35916004AB90088EC9F /* DateRangePickerViewController_iPhone.xib in Resources */,
+				0D0944DE157BD7AB003AC686 /* InfoPlist.strings in Resources */,
+				0DDD8662158021CE0022AAE7 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DFCA8A91579CA1400E71B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DFCA8BA1579CA1400E71B5A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DFCA8AA1579CA1400E71B5A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D0944D2157BD7AA003AC686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DFCA8981579CA1400E71B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D428DD1157A604D00EAF746 /* NumericUtil.m in Sources */,
+				0D428DD2157A604D00EAF746 /* PlatformHelper.m in Sources */,
+				0D428DD5157A604D00EAF746 /* ViewHelper.m in Sources */,
+				0D0944CB157BC82C003AC686 /* DispatchingAlertView.m in Sources */,
+				0D0944D1157BD523003AC686 /* NSErrorHelper.m in Sources */,
+				0D6E89FD1581663B00596556 /* NSBundle+SLexUtilResBundle.m in Sources */,
+				0D6E8A011581815B00596556 /* ErrorMsgBuilder.m in Sources */,
+				0D6E8A051581846400596556 /* UIViewController+HelperExtensions.m in Sources */,
+				0D251A8615FEC636000222EB /* DateRangePickerViewController.m in Sources */,
+				0D796BDB1661804D00A6D357 /* CHCSVWriter.m in Sources */,
+				0D796BDC1661804D00A6D357 /* NSArray+CHCSVAdditions.m in Sources */,
+				0D796BDD1661804D00A6D357 /* NSString+CHCSVAdditions.m in Sources */,
+				0D796BDF1661811B00A6D357 /* CHCSVParser.m in Sources */,
+				0DC6D22A1668460400AD8264 /* UIAlertView+Blocks.m in Sources */,
+				0DBF80C618CD3E1600AF8678 /* AbstractTableViewCell.m in Sources */,
+				0D2309C116D9236700E9DACF /* ActivityAlert.m in Sources */,
+				0D38F0011972D72D0078D725 /* SLXDateRangePickerCoordinator.m in Sources */,
+				0D0B0BAF1702799A00CCB578 /* NSDate+UtilityExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DFCA8A71579CA1400E71B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DFCA8BD1579CA1400E71B5A /* SLexUtilTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0DFCA8B31579CA1400E71B5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DFCA89B1579CA1400E71B5A /* SLexUtil */;
+			targetProxy = 0DFCA8B21579CA1400E71B5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D0944DC157BD7AB003AC686 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D0944DD157BD7AB003AC686 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0DDD8664158021CE0022AAE7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DDD8663158021CE0022AAE7 /* en */,
+				0DDD8665158021F20022AAE7 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		0DFCA8B81579CA1400E71B5A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DFCA8B91579CA1400E71B5A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D0944E1157BD7AB003AC686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLexUtilResources/SLexUtilResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "SLexUtilResources/SLexUtilResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SoftLex.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		0D0944E2157BD7AB003AC686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLexUtilResources/SLexUtilResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "SLexUtilResources/SLexUtilResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SoftLex.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		0D794BEE16F2A25D00CC0438 /* Ad-Hoc Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad-Hoc Deployment";
+		};
+		0D794BEF16F2A25D00CC0438 /* Ad-Hoc Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/SLexUtil.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLexUtil/SLexUtil-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = SLexUtil;
+				SKIP_INSTALL = YES;
+			};
+			name = "Ad-Hoc Deployment";
+		};
+		0D794BF016F2A25D00CC0438 /* Ad-Hoc Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLexUtil/SLexUtil-Prefix.pch";
+				INFOPLIST_FILE = "SLexUtilTests/SLexUtilTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SoftLex.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = "Ad-Hoc Deployment";
+		};
+		0D794BF116F2A25D00CC0438 /* Ad-Hoc Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLexUtilResources/SLexUtilResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "SLexUtilResources/SLexUtilResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SoftLex.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = "Ad-Hoc Deployment";
+		};
+		0DFCA8BE1579CA1400E71B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0DFCA8BF1579CA1400E71B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0DFCA8C11579CA1400E71B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/SLexUtil.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLexUtil/SLexUtil-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = SLexUtil;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0DFCA8C21579CA1400E71B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/SLexUtil.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLexUtil/SLexUtil-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = SLexUtil;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0DFCA8C41579CA1500E71B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLexUtil/SLexUtil-Prefix.pch";
+				INFOPLIST_FILE = "SLexUtilTests/SLexUtilTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SoftLex.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0DFCA8C51579CA1500E71B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLexUtil/SLexUtil-Prefix.pch";
+				INFOPLIST_FILE = "SLexUtilTests/SLexUtilTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SoftLex.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D0944E0157BD7AB003AC686 /* Build configuration list for PBXNativeTarget "SLexUtilResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D0944E1157BD7AB003AC686 /* Debug */,
+				0D0944E2157BD7AB003AC686 /* Release */,
+				0D794BF116F2A25D00CC0438 /* Ad-Hoc Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DFCA8961579CA1300E71B5A /* Build configuration list for PBXProject "SLexUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DFCA8BE1579CA1400E71B5A /* Debug */,
+				0DFCA8BF1579CA1400E71B5A /* Release */,
+				0D794BEE16F2A25D00CC0438 /* Ad-Hoc Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DFCA8C01579CA1400E71B5A /* Build configuration list for PBXNativeTarget "SLexUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DFCA8C11579CA1400E71B5A /* Debug */,
+				0DFCA8C21579CA1400E71B5A /* Release */,
+				0D794BEF16F2A25D00CC0438 /* Ad-Hoc Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DFCA8C31579CA1500E71B5A /* Build configuration list for PBXNativeTarget "SLexUtilTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DFCA8C41579CA1500E71B5A /* Debug */,
+				0DFCA8C51579CA1500E71B5A /* Release */,
+				0D794BF016F2A25D00CC0438 /* Ad-Hoc Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0DFCA8931579CA1300E71B5A /* Project object */;
+}

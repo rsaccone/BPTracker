@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SLexUtil' target in the 'SLexUtil' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
